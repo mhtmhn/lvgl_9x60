@@ -1,0 +1,1165 @@
+configVersion: 1.0.0
+componentName: core
+coreVersion: 5.8.2
+device: SAM9X60
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: core
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: core
+          x: '5'
+          y: '5'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    CLK_LCDC_GCLKCSS:
+      attributes:
+        id: CLK_LCDC_GCLKCSS
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: '3'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    CLK_LCDC_GCLKEN:
+      attributes:
+        id: CLK_LCDC_GCLKEN
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM0_CLOCK_ENABLE:
+      attributes:
+        id: FLEXCOM0_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM0_CLOCK_FREQUENCY:
+      attributes:
+        id: FLEXCOM0_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '200000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    FLEXCOM0_INTERRUPT_ENABLE:
+      attributes:
+        id: FLEXCOM0_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: flexcom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    FLEXCOM0_INTERRUPT_HANDLER:
+      attributes:
+        id: FLEXCOM0_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: flexcom0
+            value: FLEXCOM0_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    FLEXCOM0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: FLEXCOM0_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: flexcom0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    IAR_HEAP_SIZE:
+      attributes:
+        id: IAR_HEAP_SIZE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: '32768'
+          type: Dynamic
+        type: Values
+      type: Integer
+    LCDC_CLOCK_ENABLE:
+      attributes:
+        id: LCDC_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: lcdc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    LCDC_CLOCK_FREQUENCY:
+      attributes:
+        id: LCDC_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '200000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    LCDC_GCLK_FREQUENCY:
+      attributes:
+        id: LCDC_GCLK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '200000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    LCDC_INTERRUPT_ENABLE:
+      attributes:
+        id: LCDC_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: lcdc
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    LCDC_INTERRUPT_HANDLER:
+      attributes:
+        id: LCDC_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: lcdc
+            value: LCDC_Interrupt_Handler
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_121_FUNCTION_TYPE:
+      attributes:
+        id: PIN_121_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT15
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_121_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_121_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_136_FUNCTION_TYPE:
+      attributes:
+        id: PIN_136_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT17
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_136_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_136_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_137_FUNCTION_TYPE:
+      attributes:
+        id: PIN_137_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT23
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_137_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_137_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_147_FUNCTION_TYPE:
+      attributes:
+        id: PIN_147_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT4
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_147_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_147_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_149_FUNCTION_TYPE:
+      attributes:
+        id: PIN_149_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT13
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_149_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_149_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_150_FUNCTION_TYPE:
+      attributes:
+        id: PIN_150_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT19
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_150_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_150_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_151_DIR:
+      attributes:
+        id: PIN_151_DIR
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: In
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_151_FUNCTION_NAME:
+      attributes:
+        id: PIN_151_FUNCTION_NAME
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: BSP_MAXTOUCH_CHG
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_151_FUNCTION_TYPE:
+      attributes:
+        id: PIN_151_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: GPIO
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_151_LAT:
+      attributes:
+        id: PIN_151_LAT
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: ''
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_152_FUNCTION_TYPE:
+      attributes:
+        id: PIN_152_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDEN
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_152_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_152_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_161_FUNCTION_TYPE:
+      attributes:
+        id: PIN_161_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: FLEXCOM0_IO1
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_161_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_161_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_162_FUNCTION_TYPE:
+      attributes:
+        id: PIN_162_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT0
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_162_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_162_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_163_FUNCTION_TYPE:
+      attributes:
+        id: PIN_163_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT6
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_163_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_163_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_165_FUNCTION_TYPE:
+      attributes:
+        id: PIN_165_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT21
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_165_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_165_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_166_FUNCTION_TYPE:
+      attributes:
+        id: PIN_166_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDVSYNC
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_166_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_166_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_176_FUNCTION_TYPE:
+      attributes:
+        id: PIN_176_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT2
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_176_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_176_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_177_FUNCTION_TYPE:
+      attributes:
+        id: PIN_177_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT11
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_177_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_177_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_178_FUNCTION_TYPE:
+      attributes:
+        id: PIN_178_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT8
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_178_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_178_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_179_FUNCTION_TYPE:
+      attributes:
+        id: PIN_179_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDHSYNC
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_179_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_179_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_186_FUNCTION_TYPE:
+      attributes:
+        id: PIN_186_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: FLEXCOM0_IO0
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_186_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_186_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_187_FUNCTION_TYPE:
+      attributes:
+        id: PIN_187_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT1
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_187_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_187_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_188_FUNCTION_TYPE:
+      attributes:
+        id: PIN_188_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT3
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_188_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_188_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_189_FUNCTION_TYPE:
+      attributes:
+        id: PIN_189_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT10
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_189_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_189_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_191_FUNCTION_TYPE:
+      attributes:
+        id: PIN_191_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT20
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_191_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_191_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_201_FUNCTION_TYPE:
+      attributes:
+        id: PIN_201_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT5
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_201_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_201_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_202_FUNCTION_TYPE:
+      attributes:
+        id: PIN_202_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT12
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_202_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_202_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_203_FUNCTION_TYPE:
+      attributes:
+        id: PIN_203_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT16
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_203_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_203_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_204_FUNCTION_TYPE:
+      attributes:
+        id: PIN_204_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT22
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_204_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_204_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_205_FUNCTION_TYPE:
+      attributes:
+        id: PIN_205_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDISP
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_205_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_205_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_215_FUNCTION_TYPE:
+      attributes:
+        id: PIN_215_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT7
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_215_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_215_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_216_FUNCTION_TYPE:
+      attributes:
+        id: PIN_216_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT9
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_216_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_216_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_217_FUNCTION_TYPE:
+      attributes:
+        id: PIN_217_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT14
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_217_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_217_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_218_FUNCTION_TYPE:
+      attributes:
+        id: PIN_218_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDDAT18
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_218_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_218_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_219_FUNCTION_TYPE:
+      attributes:
+        id: PIN_219_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDPCK
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_219_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_219_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_220_FUNCTION_TYPE:
+      attributes:
+        id: PIN_220_FUNCTION_TYPE
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: LCDC_LCDPWM
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_220_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_220_PERIPHERAL_FUNCTION
+      children:
+      - children:
+        - attributes:
+            id: legato_gfx_pda_tm5000
+            value: A
+          type: Dynamic
+        type: Values
+      type: String
+    PIOA_ABCDSR1_VALUE:
+      attributes:
+        id: PIOA_ABCDSR1_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOA_ABCDSR2_VALUE:
+      attributes:
+        id: PIOA_ABCDSR2_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOA_PDR_VALUE:
+      attributes:
+        id: PIOA_PDR_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '3'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOB_OER_VALUE:
+      attributes:
+        id: PIOB_OER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '14336'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOB_SODR_VALUE:
+      attributes:
+        id: PIOB_SODR_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOC_ABCDSR1_VALUE:
+      attributes:
+        id: PIOC_ABCDSR1_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOC_ABCDSR2_VALUE:
+      attributes:
+        id: PIOC_ABCDSR2_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOC_OER_VALUE:
+      attributes:
+        id: PIOC_OER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOC_PDR_VALUE:
+      attributes:
+        id: PIOC_PDR_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '2113929215'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOC_SODR_VALUE:
+      attributes:
+        id: PIOC_SODR_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOD_OER_VALUE:
+      attributes:
+        id: PIOD_OER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: Hex
+    PIOD_PUER_VALUE:
+      attributes:
+        id: PIOD_PUER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '262144'
+          type: Dynamic
+        type: Values
+      type: Hex
+    TC0_CH0_CLOCK_FREQUENCY:
+      attributes:
+        id: TC0_CH0_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '200000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC0_CH3_CLOCK_FREQUENCY:
+      attributes:
+        id: TC0_CH3_CLOCK_FREQUENCY
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '200000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC0_CHANNEL0_CLOCK_ENABLE:
+      attributes:
+        id: TC0_CHANNEL0_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: tc0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TC0_CHANNEL1_CLOCK_ENABLE:
+      attributes:
+        id: TC0_CHANNEL1_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: tc0
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TC0_CHANNEL2_CLOCK_ENABLE:
+      attributes:
+        id: TC0_CHANNEL2_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: tc0
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TC0_CLOCK_ENABLE:
+      attributes:
+        id: TC0_CLOCK_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TC0_INTERRUPT_ENABLE:
+      attributes:
+        id: TC0_INTERRUPT_ENABLE
+      children:
+      - children:
+        - attributes:
+            id: tc0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    TC0_INTERRUPT_HANDLER:
+      attributes:
+        id: TC0_INTERRUPT_HANDLER
+      children:
+      - children:
+        - attributes:
+            id: tc0
+            value: TC0_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    TC0_INTERRUPT_HANDLER_LOCK:
+      attributes:
+        id: TC0_INTERRUPT_HANDLER_LOCK
+      children:
+      - children:
+        - attributes:
+            id: tc0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+  userData:
+    children:
+    - attributes:
+        canvasHeight: '0'
+        canvasWidth: '0'
+      type: GraphSettings
+    - children:
+      - attributes:
+          id: profile0
+          name: Main
+        type: Profile
+      type: PowerProfiles
+    type: UserData
