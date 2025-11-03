@@ -37,7 +37,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\ddram.ld
   hash: 450350eb94e9c5ff70bedabede65e852a2825e88cd10fea4dd863d36ebdfc2fb
 - file: ..\src\config\default\definitions.h
-  hash: 06f9d968d263b176ab2788bf009a6b7a95c71ba41646737fcf7dfae20d7c7044
+  hash: cb9e56e9a89c89f482ab3b9ef1dde90b334170b3c68b4f680edda08b569a7506
 - file: ..\src\config\default\device.h
   hash: 9191d645a12f96842eed9c51335f9c9f10371d437d9a33c36b0ff4d12e931d46
 - file: ..\src\config\default\device_cache.h
@@ -61,7 +61,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\default\fault_handlers.c
   hash: 931e951cf7431d3d70d6ab81bcd265ff0ac8b3f473b73cd7a541f59d49786b7c
 - file: ..\src\config\default\gfx\driver\controller\lcdc\drv_gfx_lcdc.c
-  hash: 5ad132b6f1485d9888b68ac311d136bdfa634e56431f980a10a595f5fd1d8220
+  hash: ed71ddafebb9e5082f3e75d0ffd9492385706aacf6f79fbd5f85678a8efa822a
 - file: ..\src\config\default\gfx\driver\controller\lcdc\drv_gfx_lcdc.h
   hash: 84f99fd6e647743ad32a834fc17956572fcc14fd72d574b64bee468f8e720279
 - file: ..\src\config\default\gfx\driver\gfx_driver.c

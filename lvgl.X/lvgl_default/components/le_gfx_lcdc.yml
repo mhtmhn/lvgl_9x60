@@ -107,10 +107,30 @@ data:
       - children:
         - attributes:
             id: le_gfx_lcdc
-            value: '3'
+            value: '1'
           type: Dynamic
         type: Values
       type: Integer
+    Overlay1LayerEnable:
+      attributes:
+        id: Overlay1LayerEnable
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
+    Overlay2LayerEnable:
+      attributes:
+        id: Overlay2LayerEnable
+      children:
+      - children:
+        - attributes:
+            value: 'false'
+          type: User
+        type: Values
+      type: Boolean
     UseGPU:
       attributes:
         id: UseGPU

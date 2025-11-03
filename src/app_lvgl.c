@@ -65,9 +65,9 @@ APP_LVGL_DATA app_lvglData;
 
 /* Scratch Buffer */
 #if LV_UNCACHED_BUFFER
-__attribute__ ((section(".region_nocache"), aligned (32))) uint16_t buff[800 * 480];
+__attribute__ ((section(".region_nocache"), aligned (32))) uint16_t buff[2][800 * 480];
 #else
-__attribute__ ((aligned (32))) uint16_t buff[800 * 480];
+__attribute__ ((aligned (32))) uint16_t buff[2][800 * 480];
 #endif
 
 // *****************************************************************************
@@ -152,10 +152,10 @@ static void lv_disp_drv_flush_cb(lv_display_t * disp_drv, const lv_area_t * area
     dcache_CleanByAddr((volatile void*)color_p, area_width * area_height * 2);
 #endif
 
+    gfx2d_wait_for_busy();
     gfx2d_copy(&screen_surface, &dest_rect, &source_surface, &src_rect);
     gfx2d_commit();
-    gfx2d_wait_for_busy();
-
+    
     lv_disp_flush_ready(disp_drv);
 }
 
@@ -250,7 +250,7 @@ void APP_LVGL_Tasks ( void )
                         
             /* Display */
             lv_display_t * display = lv_display_create(argDispSize.width, argDispSize.height);
-            lv_display_set_buffers(display, buff, NULL, sizeof(buff), LV_DISPLAY_RENDER_MODE_PARTIAL);
+            lv_display_set_buffers(display, buff[0], buff[1], sizeof(buff[0]), LV_DISPLAY_RENDER_MODE_PARTIAL);
             lv_display_set_flush_cb(display, lv_disp_drv_flush_cb);
 
             /* Input */

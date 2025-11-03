@@ -234,22 +234,22 @@
                      displayName="lvgl_default"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>lvgl_default/components/dfp.yml</itemPath>
+          <itemPath>lvgl_default/components/lcdc.yml</itemPath>
+          <itemPath>lvgl_default/components/sys_input.yml</itemPath>
+          <itemPath>lvgl_default/components/gfx_hal_le.yml</itemPath>
           <itemPath>lvgl_default/components/drv_i2c.yml</itemPath>
           <itemPath>lvgl_default/components/flexcom0.yml</itemPath>
+          <itemPath>lvgl_default/components/legato_gfx_pda_tm5000.yml</itemPath>
+          <itemPath>lvgl_default/components/dfp.yml</itemPath>
           <itemPath>lvgl_default/components/drv_i2c_0.yml</itemPath>
-          <itemPath>lvgl_default/components/gfx_hal_le.yml</itemPath>
+          <itemPath>lvgl_default/components/le_gfx_lcdc.yml</itemPath>
+          <itemPath>lvgl_default/components/BSP_SAM_9X60_Evaluation_Kit.yml</itemPath>
+          <itemPath>lvgl_default/components/gfx_disp_pdatm5000_800x480.yml</itemPath>
+          <itemPath>lvgl_default/components/core.yml</itemPath>
+          <itemPath>lvgl_default/components/HarmonyCore.yml</itemPath>
+          <itemPath>lvgl_default/components/tc0.yml</itemPath>
           <itemPath>lvgl_default/components/gfx_maxtouch_controller.yml</itemPath>
           <itemPath>lvgl_default/components/sys_time.yml</itemPath>
-          <itemPath>lvgl_default/components/BSP_SAM_9X60_Evaluation_Kit.yml</itemPath>
-          <itemPath>lvgl_default/components/tc0.yml</itemPath>
-          <itemPath>lvgl_default/components/sys_input.yml</itemPath>
-          <itemPath>lvgl_default/components/HarmonyCore.yml</itemPath>
-          <itemPath>lvgl_default/components/lcdc.yml</itemPath>
-          <itemPath>lvgl_default/components/core.yml</itemPath>
-          <itemPath>lvgl_default/components/gfx_disp_pdatm5000_800x480.yml</itemPath>
-          <itemPath>lvgl_default/components/legato_gfx_pda_tm5000.yml</itemPath>
-          <itemPath>lvgl_default/components/le_gfx_lcdc.yml</itemPath>
         </logicalFolder>
         <itemPath>lvgl_default/mcc-config.mc4</itemPath>
       </logicalFolder>
@@ -1957,6 +1957,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value="-marm"/>
         <property key="cast-align" value="false"/>
         <property key="code-model" value="default"/>
         <property key="const-model" value="default"/>
@@ -1971,7 +1972,7 @@
         <property key="exclude-floating-point" value="false"/>
         <property key="expand-pragma-config" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/default;../src/packs/SAM9X60_DFP;../src/lvgl;../src/lvgl/demos"/>
+                  value="../src;../src/config/default;../src/lvgl;../src/lvgl/demos;../src/packs/SAM9X60_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -1986,7 +1987,7 @@
         <property key="oXC16gcc-sfr-warn" value="false"/>
         <property key="oXC16gcc-smar-io-lvl" value="1"/>
         <property key="oXC16gcc-smart-io-fmt" value=""/>
-        <property key="optimization-level" value="-O1"/>
+        <property key="optimization-level" value="-O3"/>
         <property key="place-data-into-section" value="true"/>
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
@@ -2036,6 +2037,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -2081,6 +2083,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>
