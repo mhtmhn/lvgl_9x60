@@ -37,7 +37,7 @@
 #include "gfx2d.h"
 
 /* LVGL Parameters */
-#define LV_UNCACHED_BUFFER  1
+#define LV_UNCACHED_BUFFER  0
 #define LV_TICK_INC_VAL_MS  1
 #define LV_TASK_INC_VAL_MS  LV_DEF_REFR_PERIOD
 
@@ -125,9 +125,13 @@ static void lv_disp_drv_flush_cb(lv_display_t * disp_drv, const lv_area_t * area
     screen_surface.format = GFX2D_PF_RGB565;
     screen_surface.address = ioctlArg.value.v_pbuffer->pixels;
 
+    // Get the dimensions of the area to flush
+    uint16_t area_width = lv_area_get_width(area);
+    uint16_t area_height = lv_area_get_height(area);
+    
     gfx2d_surface_t source_surface = {0};
-    source_surface.width = lv_area_get_width(area);
-    source_surface.height = lv_area_get_height(area);
+    source_surface.width = area_width;
+    source_surface.height = area_height;
     source_surface.stride = source_surface.width * 2;
     source_surface.format = GFX2D_PF_RGB565;
     source_surface.address = (void*)color_p;
@@ -135,20 +139,22 @@ static void lv_disp_drv_flush_cb(lv_display_t * disp_drv, const lv_area_t * area
     gfx2d_rect_t dest_rect;
     dest_rect.x = area->x1;
     dest_rect.y = area->y1;
-    dest_rect.width = lv_area_get_width(area);
-    dest_rect.height = lv_area_get_height(area);
+    dest_rect.width = area_width;
+    dest_rect.height = area_height;
 
     gfx2d_rect_t src_rect;
     src_rect.x = 0;
     src_rect.y = 0;
-    src_rect.width = lv_area_get_width(area);
-    src_rect.height = lv_area_get_height(area);
+    src_rect.width = area_width;
+    src_rect.height = area_height;
 
-    
-    gfx2d_wait_for_busy();
+#if !LV_UNCACHED_BUFFER 
+    dcache_CleanByAddr((volatile void*)color_p, area_width * area_height * 2);
+#endif
+
     gfx2d_copy(&screen_surface, &dest_rect, &source_surface, &src_rect);
     gfx2d_commit();
-    
+    gfx2d_wait_for_busy();
 
     lv_disp_flush_ready(disp_drv);
 }
